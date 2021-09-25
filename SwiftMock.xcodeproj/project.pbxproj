@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1534AD626FEB595009D01F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1534AD526FEB595009D01F1 /* AppDelegate.swift */; };
+		F1534AD826FEB595009D01F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1534AD726FEB595009D01F1 /* SceneDelegate.swift */; };
+		F1534ADA26FEB595009D01F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1534AD926FEB595009D01F1 /* ViewController.swift */; };
+		F1534ADD26FEB595009D01F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1534ADB26FEB595009D01F1 /* Main.storyboard */; };
+		F1534ADF26FEB597009D01F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1534ADE26FEB597009D01F1 /* Assets.xcassets */; };
+		F1534AE226FEB597009D01F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1534AE026FEB597009D01F1 /* LaunchScreen.storyboard */; };
 		F189AD7326FE9F30006B6846 /* SwiftMock.docc in Sources */ = {isa = PBXBuildFile; fileRef = F189AD7226FE9F30006B6846 /* SwiftMock.docc */; };
 		F189AD7926FE9F30006B6846 /* SwiftMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F189AD6E26FE9F30006B6846 /* SwiftMock.framework */; };
 		F189AD7E26FE9F30006B6846 /* SwiftMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189AD7D26FE9F30006B6846 /* SwiftMockTests.swift */; };
@@ -24,6 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1534AD326FEB595009D01F1 /* SwiftMockExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMockExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1534AD526FEB595009D01F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1534AD726FEB595009D01F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1534AD926FEB595009D01F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1534ADC26FEB595009D01F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1534ADE26FEB597009D01F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1534AE126FEB597009D01F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1534AE326FEB597009D01F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F189AD6E26FE9F30006B6846 /* SwiftMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F189AD7126FE9F30006B6846 /* SwiftMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftMock.h; sourceTree = "<group>"; };
 		F189AD7226FE9F30006B6846 /* SwiftMock.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftMock.docc; sourceTree = "<group>"; };
@@ -32,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F1534AD026FEB595009D01F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F189AD6B26FE9F30006B6846 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,11 +71,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1534AD426FEB595009D01F1 /* SwiftMockExamples */ = {
+			isa = PBXGroup;
+			children = (
+				F1534AD526FEB595009D01F1 /* AppDelegate.swift */,
+				F1534AD726FEB595009D01F1 /* SceneDelegate.swift */,
+				F1534AD926FEB595009D01F1 /* ViewController.swift */,
+				F1534ADB26FEB595009D01F1 /* Main.storyboard */,
+				F1534ADE26FEB597009D01F1 /* Assets.xcassets */,
+				F1534AE026FEB597009D01F1 /* LaunchScreen.storyboard */,
+				F1534AE326FEB597009D01F1 /* Info.plist */,
+			);
+			path = SwiftMockExamples;
+			sourceTree = "<group>";
+		};
 		F189AD6426FE9F30006B6846 = {
 			isa = PBXGroup;
 			children = (
 				F189AD7026FE9F30006B6846 /* SwiftMock */,
 				F189AD7C26FE9F30006B6846 /* SwiftMockTests */,
+				F1534AD426FEB595009D01F1 /* SwiftMockExamples */,
 				F189AD6F26FE9F30006B6846 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +100,7 @@
 			children = (
 				F189AD6E26FE9F30006B6846 /* SwiftMock.framework */,
 				F189AD7826FE9F30006B6846 /* SwiftMockTests.xctest */,
+				F1534AD326FEB595009D01F1 /* SwiftMockExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +136,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F1534AD226FEB595009D01F1 /* SwiftMockExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1534AE626FEB597009D01F1 /* Build configuration list for PBXNativeTarget "SwiftMockExamples" */;
+			buildPhases = (
+				F1534ACF26FEB595009D01F1 /* Sources */,
+				F1534AD026FEB595009D01F1 /* Frameworks */,
+				F1534AD126FEB595009D01F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMockExamples;
+			productName = SwiftMockExamples;
+			productReference = F1534AD326FEB595009D01F1 /* SwiftMockExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F189AD6D26FE9F30006B6846 /* SwiftMock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F189AD8226FE9F30006B6846 /* Build configuration list for PBXNativeTarget "SwiftMock" */;
@@ -145,6 +199,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					F1534AD226FEB595009D01F1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					F189AD6D26FE9F30006B6846 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -168,11 +225,22 @@
 			targets = (
 				F189AD6D26FE9F30006B6846 /* SwiftMock */,
 				F189AD7726FE9F30006B6846 /* SwiftMockTests */,
+				F1534AD226FEB595009D01F1 /* SwiftMockExamples */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F1534AD126FEB595009D01F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1534AE226FEB597009D01F1 /* LaunchScreen.storyboard in Resources */,
+				F1534ADF26FEB597009D01F1 /* Assets.xcassets in Resources */,
+				F1534ADD26FEB595009D01F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F189AD6C26FE9F30006B6846 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +258,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F1534ACF26FEB595009D01F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1534ADA26FEB595009D01F1 /* ViewController.swift in Sources */,
+				F1534AD626FEB595009D01F1 /* AppDelegate.swift in Sources */,
+				F1534AD826FEB595009D01F1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F189AD6A26FE9F30006B6846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,7 +294,82 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		F1534ADB26FEB595009D01F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1534ADC26FEB595009D01F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1534AE026FEB597009D01F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1534AE126FEB597009D01F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		F1534AE426FEB597009D01F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6MUH3V2QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftMockExamples/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bitxlabs.swiftmock.SwiftMockExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1534AE526FEB597009D01F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6MUH3V2QB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftMockExamples/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bitxlabs.swiftmock.SwiftMockExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F189AD8026FE9F30006B6846 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +593,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F1534AE626FEB597009D01F1 /* Build configuration list for PBXNativeTarget "SwiftMockExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1534AE426FEB597009D01F1 /* Debug */,
+				F1534AE526FEB597009D01F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F189AD6826FE9F30006B6846 /* Build configuration list for PBXProject "SwiftMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
