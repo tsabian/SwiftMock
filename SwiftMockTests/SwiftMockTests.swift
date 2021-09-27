@@ -10,24 +10,66 @@ import XCTest
 
 class SwiftMockTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var mock: SwiftMock<Operations>!
+    var sut: Operations!
+
+    override func setUp() {
+        super.setUp()
+        sut = Operations()
+        mock = SwiftMock()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        mock = nil
+        sut = nil
+        super.tearDown()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSumOperation() {
+        let expected: Int = 30
+        mock.setup(call: { $0.sum(valueA: 10, valueB: 10) }, thenReturn: expected)
+        let result = sut.sum(valueA: 10, valueB: 10)
+        XCTAssertEqual(expected, result)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+/*
+    func testDivideOperation() {
+        let expected = 5.0
+        mock.setup(call: #selector(sut.divide(valueA:valueB:)), thenReturn: expected)
+        do {
+            let result = try sut.divide(valueA: 10, valueB: 2)
+            XCTAssertEqual(expected, result)
+        } catch {
+            XCTFail("divide should not be fail")
         }
     }
 
+    func testDivideZeroOperation() {
+        let expected = OperationError.divideByZero
+        mock.setup(call: #selector(sut.divide(valueA:valueB:)), throw: expected)
+        do {
+            _ = try sut.divide(valueA: 10, valueB: 0)
+            XCTFail("divide should be fail")
+        } catch OperationError.divideByZero {
+            XCTAssertTrue(true)
+        } catch {
+            XCTFail("divide should not be fail")
+        }
+    }*/
+}
+
+enum OperationError: Error {
+    case divideByZero
+}
+
+class Operations {
+    @objc func sum(valueA: Int, valueB: Int) -> Int {
+        return valueA + valueB
+    }
+
+    func divide(valueA: Float, valueB: Float) throws -> Float {
+        if valueB == 0 {
+            throw OperationError.divideByZero
+        }
+        return valueA / valueB
+    }
 }

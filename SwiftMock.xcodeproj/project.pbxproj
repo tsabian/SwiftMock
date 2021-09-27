@@ -13,6 +13,9 @@
 		F1534ADD26FEB595009D01F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1534ADB26FEB595009D01F1 /* Main.storyboard */; };
 		F1534ADF26FEB597009D01F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1534ADE26FEB597009D01F1 /* Assets.xcassets */; };
 		F1534AE226FEB597009D01F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1534AE026FEB597009D01F1 /* LaunchScreen.storyboard */; };
+		F1534AEB26FEC5B6009D01F1 /* SwiftMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1534AEA26FEC5B6009D01F1 /* SwiftMock.swift */; };
+		F1534AF526FEC7F0009D01F1 /* SwiftMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F189AD6E26FE9F30006B6846 /* SwiftMock.framework */; };
+		F1534AF626FEC7F0009D01F1 /* SwiftMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F189AD6E26FE9F30006B6846 /* SwiftMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F189AD7326FE9F30006B6846 /* SwiftMock.docc in Sources */ = {isa = PBXBuildFile; fileRef = F189AD7226FE9F30006B6846 /* SwiftMock.docc */; };
 		F189AD7926FE9F30006B6846 /* SwiftMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F189AD6E26FE9F30006B6846 /* SwiftMock.framework */; };
 		F189AD7E26FE9F30006B6846 /* SwiftMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189AD7D26FE9F30006B6846 /* SwiftMockTests.swift */; };
@@ -20,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F1534AF726FEC7F0009D01F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F189AD6526FE9F30006B6846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F189AD6D26FE9F30006B6846;
+			remoteInfo = SwiftMock;
+		};
 		F189AD7A26FE9F30006B6846 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F189AD6526FE9F30006B6846 /* Project object */;
@@ -28,6 +38,20 @@
 			remoteInfo = SwiftMock;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1534AF426FEC7D5009D01F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1534AF626FEC7F0009D01F1 /* SwiftMock.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F1534AD326FEB595009D01F1 /* SwiftMockExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMockExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +62,8 @@
 		F1534ADE26FEB597009D01F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1534AE126FEB597009D01F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1534AE326FEB597009D01F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1534AE726FEB92C009D01F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F1534AEA26FEC5B6009D01F1 /* SwiftMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMock.swift; sourceTree = "<group>"; };
 		F189AD6E26FE9F30006B6846 /* SwiftMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F189AD7126FE9F30006B6846 /* SwiftMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftMock.h; sourceTree = "<group>"; };
 		F189AD7226FE9F30006B6846 /* SwiftMock.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftMock.docc; sourceTree = "<group>"; };
@@ -50,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1534AF526FEC7F0009D01F1 /* SwiftMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,13 +112,22 @@
 			path = SwiftMockExamples;
 			sourceTree = "<group>";
 		};
+		F1534AF126FEC7D5009D01F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F189AD6426FE9F30006B6846 = {
 			isa = PBXGroup;
 			children = (
+				F1534AE726FEB92C009D01F1 /* README.md */,
 				F189AD7026FE9F30006B6846 /* SwiftMock */,
 				F189AD7C26FE9F30006B6846 /* SwiftMockTests */,
 				F1534AD426FEB595009D01F1 /* SwiftMockExamples */,
 				F189AD6F26FE9F30006B6846 /* Products */,
+				F1534AF126FEC7D5009D01F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +146,7 @@
 			children = (
 				F189AD7126FE9F30006B6846 /* SwiftMock.h */,
 				F189AD7226FE9F30006B6846 /* SwiftMock.docc */,
+				F1534AEA26FEC5B6009D01F1 /* SwiftMock.swift */,
 			);
 			path = SwiftMock;
 			sourceTree = "<group>";
@@ -143,10 +180,13 @@
 				F1534ACF26FEB595009D01F1 /* Sources */,
 				F1534AD026FEB595009D01F1 /* Frameworks */,
 				F1534AD126FEB595009D01F1 /* Resources */,
+				F1534AE926FEBAFC009D01F1 /* Swiftlint Script */,
+				F1534AF426FEC7D5009D01F1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F1534AF826FEC7F0009D01F1 /* PBXTargetDependency */,
 			);
 			name = SwiftMockExamples;
 			productName = SwiftMockExamples;
@@ -161,6 +201,7 @@
 				F189AD6A26FE9F30006B6846 /* Sources */,
 				F189AD6B26FE9F30006B6846 /* Frameworks */,
 				F189AD6C26FE9F30006B6846 /* Resources */,
+				F1534AE826FEBA14009D01F1 /* Swiftlint Script */,
 			);
 			buildRules = (
 			);
@@ -257,6 +298,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F1534AE826FEBA14009D01F1 /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F1534AE926FEBAFC009D01F1 /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1534ACF26FEB595009D01F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F189AD7326FE9F30006B6846 /* SwiftMock.docc in Sources */,
+				F1534AEB26FEC5B6009D01F1 /* SwiftMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +368,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F1534AF826FEC7F0009D01F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F189AD6D26FE9F30006B6846 /* SwiftMock */;
+			targetProxy = F1534AF726FEC7F0009D01F1 /* PBXContainerItemProxy */;
+		};
 		F189AD7B26FE9F30006B6846 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F189AD6D26FE9F30006B6846 /* SwiftMock */;
@@ -322,6 +408,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6MUH3V2QB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Product",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftMockExamples/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -350,6 +440,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6MUH3V2QB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Product",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftMockExamples/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -502,6 +596,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Product",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -530,6 +628,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Product",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -551,6 +653,7 @@
 		F189AD8626FE9F30006B6846 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6MUH3V2QB;
@@ -572,6 +675,7 @@
 		F189AD8726FE9F30006B6846 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6MUH3V2QB;
